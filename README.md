@@ -10,13 +10,15 @@ curl -L https://raw.githubusercontent.com/g2forge/forklift/master/install | bash
 
 # Packages
 
-* psmisc
+* tmux
 * dos2unix
 * nano
-* bc
 * curl
-* jq
+* git
 * make
+* psmisc
+* bc
+* jq
 
 # Maintenance
 

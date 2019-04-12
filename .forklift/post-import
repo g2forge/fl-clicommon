@@ -1,4 +1,5 @@
 #!/bin/bash
+set -eu -o pipefail
 
 SELF_DIR=$(cd $(dirname ${0}) && pwd -P)
 SELF=${SELF_DIR}/$(basename ${0})
