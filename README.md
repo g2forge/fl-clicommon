@@ -19,6 +19,9 @@ curl -L https://raw.githubusercontent.com/g2forge/forklift/master/install | bash
 * psmisc
 * bc
 * jq
+* rsync
+* unzip
+* wget
 
 # Maintenance
 
