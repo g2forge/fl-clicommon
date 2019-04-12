@@ -8,4 +8,6 @@ SELF=${SELF_DIR}/$(basename ${0})
 PACKAGES=$(sed -n '/# Packages/,/#.*/p' ${SELF_DIR}/../README.md | grep -E "^\\* " | sed -e 's/* //' | sed -e :a -e '$!N; s/[\n\r]/ /; ta' | tr -s ' ')
 
 # Use forklift to install the OS packages
+echo "Installing: ${PACKAGES}"
 ${FORKLIFT} run builtin common current install ${PACKAGES}
+echo "Done!"
