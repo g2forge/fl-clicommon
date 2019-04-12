@@ -1,0 +1,10 @@
+#!/bin/bash
+
+SELF_DIR=$(cd $(dirname ${0}) && pwd -P)
+SELF=${SELF_DIR}/$(basename ${0})
+
+# Extract the list of packages from the README.md for this pallet
+PACKAGES=$(sed -n '/# Packages/,/#.*/p' ${SELF_DIR}/../README.md | grep -E "^\\* " | sed -e 's/* //' | sed -e :a -e '$!N; s/[\n\r]/ /; ta' | tr -s ' ')
+
+# Use forklift to install the OS packages
+${FORKLIFT} run builtin common current install ${PACKAGES}
