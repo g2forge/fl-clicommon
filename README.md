@@ -5,7 +5,7 @@
 # Installation
 
 ```
-bash <(curl -L https://raw.githubusercontent.com/g2forge/forklift/master/install) import com.github g2forge/fl-clicommon current
+bash <(curl -L https://raw.githubusercontent.com/g2forge/forklift/master/install) import com.github g2forge/fl-clicommon master
 ```
 
 # Packages
