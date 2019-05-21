@@ -1,6 +1,6 @@
 # Forklift CLI Common
 
-[Forklift](https://github.com/g2forge/fl-clicommon) pallet to install commonly used command line tools and an example of a self-installing repo built using forklift.
+[Forklift](https://github.com/g2forge/forklift) pallet to install commonly used command line tools and an example of a self-installing repo built using forklift.
 
 # Installation
 
